@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    td {
+        padding: 5px;
+    }
+    tr.radio, tr.checkbox {
+        text-align: center;
+    }
+    td.text, td.password, td.combo-text, td.textarea {
+        text-align: right;
+    }
+</style>
+<body>
+    <form action="/" name="form2">
+       <table>
+        <tr>
+            <td class="text">
+                <label for="text">Text :</label>
+            </td>
+            <td><input type="text" id="text" name="text"></td>
+        </tr>
+        <tr>
+            <td class="password"><label>Password :</label></td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr class="radio">
+            <td colspan="2">
+                <label>Radio 1</label>
+                <input type="radio" id="radio" name="radio">
+                <label>Radio 2</label>
+                <input type="radio" id="radio" name="radio">
+            </td>
+        </tr>
+        <tr class="checkbox">
+            <td colspan="2">
+                <label>Checkbox 1</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label>Checkbox 2</label>
+                <input type="checkbox" id="checkbox" name="checkbox">
+            </td>
+        </tr>
+        <tr>
+            <td class="combo-text">Combo Box :</td>
+            <td>
+                <select title="select" name="select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="textarea">Textarea :</td>
+            <td><textarea name="textarea" cols="19" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button type="button" id="button" name="button">Button</button>
+            </th>
+        </tr>
+    </table> 
+    </form>
+</body>
+</html>
